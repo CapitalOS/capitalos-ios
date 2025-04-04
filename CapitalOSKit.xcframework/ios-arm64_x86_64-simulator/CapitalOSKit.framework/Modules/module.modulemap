@@ -1,0 +1,6 @@
+framework module CapitalOSKit {
+  umbrella header "CapitalOSKit.h"
+  export *
+
+  module * { export * }
+}

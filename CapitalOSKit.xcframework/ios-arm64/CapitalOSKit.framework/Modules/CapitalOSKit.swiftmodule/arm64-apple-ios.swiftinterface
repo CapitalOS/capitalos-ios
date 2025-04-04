@@ -1,0 +1,44 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CapitalOSKit
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+@_exported import CapitalOSKit
+import Foundation
+import LinkKit
+import OSLog
+import SafariServices
+import Swift
+import SwiftUI
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum LoadingStatus : Swift.String {
+  case IDLE, LOADING, COMPLETE
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct COVersioning {
+  public static var current: Swift.String
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A6OSViewV4bodyQrvp", 0) __
+}
+public protocol CapitalOSDelegate {
+  func requestLogin(completion: @escaping (Swift.Result<CapitalOSKit.LoginResponse, any Swift.Error>) -> Swift.Void)
+  func onLoadingStatusChanged(loadingStatus: CapitalOSKit.LoadingStatus)
+}
+public struct LoginResponse : Swift.Decodable {
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension CapitalOSKit.LoadingStatus : Swift.Equatable {}
+extension CapitalOSKit.LoadingStatus : Swift.Hashable {}
+extension CapitalOSKit.LoadingStatus : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSView : Swift.Sendable {}
