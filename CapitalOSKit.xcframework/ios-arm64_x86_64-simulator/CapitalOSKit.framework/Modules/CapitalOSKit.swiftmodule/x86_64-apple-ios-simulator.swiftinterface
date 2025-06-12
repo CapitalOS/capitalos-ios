@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CapitalOSKit
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 @_exported import CapitalOSKit
 import Foundation
 import LinkKit
@@ -13,32 +13,70 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum LoadingStatus : Swift.String {
-  case IDLE, LOADING, COMPLETE
+public enum CapitalOSViewState : Swift.String {
+  case idle
+  case loading
+  case error
+  case complete
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
-public struct COVersioning {
-  public static var current: Swift.String
+public struct CapitalOSLoginResponse : Swift.Decodable {
+  public init(token: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol CapitalOSDelegate : AnyObject {
+  func onLoginNeeded(completion: @escaping (Swift.Result<CapitalOSKit.CapitalOSLoginResponse, any Swift.Error>) -> Swift.Void)
+  func onStateChanged(viewState: CapitalOSKit.CapitalOSViewState)
+  func onError(error: CapitalOSKit.CapitalOSError)
+}
+public enum CapitalOSError : Swift.Error, Swift.Equatable {
+  case network(CapitalOSKit.NetworkError)
+  public static func == (a: CapitalOSKit.CapitalOSError, b: CapitalOSKit.CapitalOSError) -> Swift.Bool
+}
+public enum NetworkError : Swift.Equatable {
+  case tooManyRequests(errorMessage: Swift.String)
+  case timeout(errorMessage: Swift.String)
+  case connection(errorCode: Swift.Int)
+  public static func == (a: CapitalOSKit.NetworkError, b: CapitalOSKit.NetworkError) -> Swift.Bool
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSCardDetails : SwiftUICore.View {
+  public struct Configuration {
+    public enum DisplayMode {
+      case full
+      case cardOnly
+      case cardBackOnly
+      public static func == (a: CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode, b: CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public init(cardId: Swift.String, displayMode: CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode = .full, hideAddress: Swift.Bool = false)
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSCardDetails.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSCardDetails.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A13OSCardDetailsV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct CapitalOSView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
   @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A6OSViewV4bodyQrvp", 0) __
 }
-public protocol CapitalOSDelegate {
-  func requestLogin(completion: @escaping (Swift.Result<CapitalOSKit.LoginResponse, any Swift.Error>) -> Swift.Void)
-  func onLoadingStatusChanged(loadingStatus: CapitalOSKit.LoadingStatus)
-}
-public struct LoginResponse : Swift.Decodable {
-  public init(from decoder: any Swift.Decoder) throws
-}
-extension CapitalOSKit.LoadingStatus : Swift.Equatable {}
-extension CapitalOSKit.LoadingStatus : Swift.Hashable {}
-extension CapitalOSKit.LoadingStatus : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.Hashable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSCardDetails : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode : Swift.Hashable {}
 extension CapitalOSKit.CapitalOSView : Swift.Sendable {}

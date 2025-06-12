@@ -6,35 +6,35 @@
     "children": [
       {
         "kind": "TypeDecl",
-        "name": "LoadingStatus",
-        "printedName": "LoadingStatus",
+        "name": "CapitalOSViewState",
+        "printedName": "CapitalOSViewState",
         "children": [
           {
             "kind": "Var",
-            "name": "IDLE",
-            "printedName": "IDLE",
+            "name": "idle",
+            "printedName": "idle",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CapitalOSKit.LoadingStatus.Type) -> CapitalOSKit.LoadingStatus",
+                "printedName": "(CapitalOSKit.CapitalOSViewState.Type) -> CapitalOSKit.CapitalOSViewState",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LoadingStatus",
-                    "printedName": "CapitalOSKit.LoadingStatus",
-                    "usr": "s:12CapitalOSKit13LoadingStatusO"
+                    "name": "CapitalOSViewState",
+                    "printedName": "CapitalOSKit.CapitalOSViewState",
+                    "usr": "s:12CapitalOSKit0A11OSViewStateO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "CapitalOSKit.LoadingStatus.Type",
+                    "printedName": "CapitalOSKit.CapitalOSViewState.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LoadingStatus",
-                        "printedName": "CapitalOSKit.LoadingStatus",
-                        "usr": "s:12CapitalOSKit13LoadingStatusO"
+                        "name": "CapitalOSViewState",
+                        "printedName": "CapitalOSKit.CapitalOSViewState",
+                        "usr": "s:12CapitalOSKit0A11OSViewStateO"
                       }
                     ]
                   }
@@ -42,36 +42,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12CapitalOSKit13LoadingStatusO4IDLEyA2CmF",
-            "mangledName": "$s12CapitalOSKit13LoadingStatusO4IDLEyA2CmF",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO4idleyA2CmF",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO4idleyA2CmF",
             "moduleName": "CapitalOSKit"
           },
           {
             "kind": "Var",
-            "name": "LOADING",
-            "printedName": "LOADING",
+            "name": "loading",
+            "printedName": "loading",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CapitalOSKit.LoadingStatus.Type) -> CapitalOSKit.LoadingStatus",
+                "printedName": "(CapitalOSKit.CapitalOSViewState.Type) -> CapitalOSKit.CapitalOSViewState",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LoadingStatus",
-                    "printedName": "CapitalOSKit.LoadingStatus",
-                    "usr": "s:12CapitalOSKit13LoadingStatusO"
+                    "name": "CapitalOSViewState",
+                    "printedName": "CapitalOSKit.CapitalOSViewState",
+                    "usr": "s:12CapitalOSKit0A11OSViewStateO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "CapitalOSKit.LoadingStatus.Type",
+                    "printedName": "CapitalOSKit.CapitalOSViewState.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LoadingStatus",
-                        "printedName": "CapitalOSKit.LoadingStatus",
-                        "usr": "s:12CapitalOSKit13LoadingStatusO"
+                        "name": "CapitalOSViewState",
+                        "printedName": "CapitalOSKit.CapitalOSViewState",
+                        "usr": "s:12CapitalOSKit0A11OSViewStateO"
                       }
                     ]
                   }
@@ -79,36 +79,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12CapitalOSKit13LoadingStatusO7LOADINGyA2CmF",
-            "mangledName": "$s12CapitalOSKit13LoadingStatusO7LOADINGyA2CmF",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO7loadingyA2CmF",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO7loadingyA2CmF",
             "moduleName": "CapitalOSKit"
           },
           {
             "kind": "Var",
-            "name": "COMPLETE",
-            "printedName": "COMPLETE",
+            "name": "error",
+            "printedName": "error",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(CapitalOSKit.LoadingStatus.Type) -> CapitalOSKit.LoadingStatus",
+                "printedName": "(CapitalOSKit.CapitalOSViewState.Type) -> CapitalOSKit.CapitalOSViewState",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LoadingStatus",
-                    "printedName": "CapitalOSKit.LoadingStatus",
-                    "usr": "s:12CapitalOSKit13LoadingStatusO"
+                    "name": "CapitalOSViewState",
+                    "printedName": "CapitalOSKit.CapitalOSViewState",
+                    "usr": "s:12CapitalOSKit0A11OSViewStateO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "CapitalOSKit.LoadingStatus.Type",
+                    "printedName": "CapitalOSKit.CapitalOSViewState.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LoadingStatus",
-                        "printedName": "CapitalOSKit.LoadingStatus",
-                        "usr": "s:12CapitalOSKit13LoadingStatusO"
+                        "name": "CapitalOSViewState",
+                        "printedName": "CapitalOSKit.CapitalOSViewState",
+                        "usr": "s:12CapitalOSKit0A11OSViewStateO"
                       }
                     ]
                   }
@@ -116,8 +116,45 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:12CapitalOSKit13LoadingStatusO8COMPLETEyA2CmF",
-            "mangledName": "$s12CapitalOSKit13LoadingStatusO8COMPLETEyA2CmF",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO5erroryA2CmF",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO5erroryA2CmF",
+            "moduleName": "CapitalOSKit"
+          },
+          {
+            "kind": "Var",
+            "name": "complete",
+            "printedName": "complete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CapitalOSKit.CapitalOSViewState.Type) -> CapitalOSKit.CapitalOSViewState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CapitalOSViewState",
+                    "printedName": "CapitalOSKit.CapitalOSViewState",
+                    "usr": "s:12CapitalOSKit0A11OSViewStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CapitalOSKit.CapitalOSViewState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSViewState",
+                        "printedName": "CapitalOSKit.CapitalOSViewState",
+                        "usr": "s:12CapitalOSKit0A11OSViewStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO8completeyA2CmF",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO8completeyA2CmF",
             "moduleName": "CapitalOSKit"
           },
           {
@@ -128,13 +165,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "CapitalOSKit.LoadingStatus?",
+                "printedName": "CapitalOSKit.CapitalOSViewState?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LoadingStatus",
-                    "printedName": "CapitalOSKit.LoadingStatus",
-                    "usr": "s:12CapitalOSKit13LoadingStatusO"
+                    "name": "CapitalOSViewState",
+                    "printedName": "CapitalOSKit.CapitalOSViewState",
+                    "usr": "s:12CapitalOSKit0A11OSViewStateO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -147,8 +184,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12CapitalOSKit13LoadingStatusO8rawValueACSgSS_tcfc",
-            "mangledName": "$s12CapitalOSKit13LoadingStatusO8rawValueACSgSS_tcfc",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO8rawValueACSgSS_tcfc",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO8rawValueACSgSS_tcfc",
             "moduleName": "CapitalOSKit",
             "implicit": true,
             "init_kind": "Designated"
@@ -166,8 +203,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:12CapitalOSKit13LoadingStatusO8rawValueSSvp",
-            "mangledName": "$s12CapitalOSKit13LoadingStatusO8rawValueSSvp",
+            "usr": "s:12CapitalOSKit0A11OSViewStateO8rawValueSSvp",
+            "mangledName": "$s12CapitalOSKit0A11OSViewStateO8rawValueSSvp",
             "moduleName": "CapitalOSKit",
             "implicit": true,
             "accessors": [
@@ -184,8 +221,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:12CapitalOSKit13LoadingStatusO8rawValueSSvg",
-                "mangledName": "$s12CapitalOSKit13LoadingStatusO8rawValueSSvg",
+                "usr": "s:12CapitalOSKit0A11OSViewStateO8rawValueSSvg",
+                "mangledName": "$s12CapitalOSKit0A11OSViewStateO8rawValueSSvg",
                 "moduleName": "CapitalOSKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -194,12 +231,11 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:12CapitalOSKit13LoadingStatusO",
-        "mangledName": "$s12CapitalOSKit13LoadingStatusO",
+        "usr": "s:12CapitalOSKit0A11OSViewStateO",
+        "mangledName": "$s12CapitalOSKit0A11OSViewStateO",
         "moduleName": "CapitalOSKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "enumRawTypeName": "String",
         "conformances": [
@@ -256,15 +292,91 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "LinkKit",
+        "printedName": "LinkKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "LinkKit",
+        "printedName": "LinkKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
         "kind": "TypeDecl",
-        "name": "COVersioning",
-        "printedName": "COVersioning",
+        "name": "CapitalOSLoginResponse",
+        "printedName": "CapitalOSLoginResponse",
         "children": [
           {
-            "kind": "Var",
-            "name": "current",
-            "printedName": "current",
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(token:)",
             "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSLoginResponse",
+                "printedName": "CapitalOSKit.CapitalOSLoginResponse",
+                "usr": "s:12CapitalOSKit0A15OSLoginResponseV"
+              },
               {
                 "kind": "TypeNominal",
                 "name": "String",
@@ -272,93 +384,48 @@
                 "usr": "s:SS"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:12CapitalOSKit12COVersioningV7currentSSvpZ",
-            "mangledName": "$s12CapitalOSKit12COVersioningV7currentSSvpZ",
+            "declKind": "Constructor",
+            "usr": "s:12CapitalOSKit0A15OSLoginResponseV5tokenACSS_tcfc",
+            "mangledName": "$s12CapitalOSKit0A15OSLoginResponseV5tokenACSS_tcfc",
             "moduleName": "CapitalOSKit",
-            "static": true,
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
-            "hasStorage": true,
-            "accessors": [
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
               {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12CapitalOSKit12COVersioningV7currentSSvgZ",
-                "mangledName": "$s12CapitalOSKit12COVersioningV7currentSSvgZ",
-                "moduleName": "CapitalOSKit",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
+                "kind": "TypeNominal",
+                "name": "CapitalOSLoginResponse",
+                "printedName": "CapitalOSKit.CapitalOSLoginResponse",
+                "usr": "s:12CapitalOSKit0A15OSLoginResponseV"
               },
               {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12CapitalOSKit12COVersioningV7currentSSvsZ",
-                "mangledName": "$s12CapitalOSKit12COVersioningV7currentSSvsZ",
-                "moduleName": "CapitalOSKit",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:12CapitalOSKit12COVersioningV7currentSSvMZ",
-                "mangledName": "$s12CapitalOSKit12COVersioningV7currentSSvMZ",
-                "moduleName": "CapitalOSKit",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
               }
-            ]
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CapitalOSKit0A15OSLoginResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s12CapitalOSKit0A15OSLoginResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CapitalOSKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Struct",
-        "usr": "s:12CapitalOSKit12COVersioningV",
-        "mangledName": "$s12CapitalOSKit12COVersioningV",
+        "usr": "s:12CapitalOSKit0A15OSLoginResponseV",
+        "mangledName": "$s12CapitalOSKit0A15OSLoginResponseV",
         "moduleName": "CapitalOSKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -374,6 +441,152 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CapitalOSDelegate",
+        "printedName": "CapitalOSDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onLoginNeeded",
+            "printedName": "onLoginNeeded(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<CapitalOSKit.CapitalOSLoginResponse, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<CapitalOSKit.CapitalOSLoginResponse, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSLoginResponse",
+                        "printedName": "CapitalOSKit.CapitalOSLoginResponse",
+                        "usr": "s:12CapitalOSKit0A15OSLoginResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CapitalOSKit0A10OSDelegateP13onLoginNeeded10completionyys6ResultOyAA0A15OSLoginResponseVs5Error_pGc_tF",
+            "mangledName": "$s12CapitalOSKit0A10OSDelegateP13onLoginNeeded10completionyys6ResultOyAA0A15OSLoginResponseVs5Error_pGc_tF",
+            "moduleName": "CapitalOSKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CapitalOSKit.CapitalOSDelegate>",
+            "sugared_genericSig": "<Self where Self : CapitalOSKit.CapitalOSDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onStateChanged",
+            "printedName": "onStateChanged(viewState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSViewState",
+                "printedName": "CapitalOSKit.CapitalOSViewState",
+                "usr": "s:12CapitalOSKit0A11OSViewStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CapitalOSKit0A10OSDelegateP14onStateChanged04viewE0yAA0a6OSViewE0O_tF",
+            "mangledName": "$s12CapitalOSKit0A10OSDelegateP14onStateChanged04viewE0yAA0a6OSViewE0O_tF",
+            "moduleName": "CapitalOSKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CapitalOSKit.CapitalOSDelegate>",
+            "sugared_genericSig": "<Self where Self : CapitalOSKit.CapitalOSDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSError",
+                "printedName": "CapitalOSKit.CapitalOSError",
+                "usr": "s:12CapitalOSKit0A7OSErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CapitalOSKit0A10OSDelegateP7onError5erroryAA0A7OSErrorO_tF",
+            "mangledName": "$s12CapitalOSKit0A10OSDelegateP7onError5erroryAA0A7OSErrorO_tF",
+            "moduleName": "CapitalOSKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : CapitalOSKit.CapitalOSDelegate>",
+            "sugared_genericSig": "<Self where Self : CapitalOSKit.CapitalOSDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12CapitalOSKit0A10OSDelegateP",
+        "mangledName": "$s12CapitalOSKit0A10OSDelegateP",
+        "moduleName": "CapitalOSKit",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -395,19 +608,1024 @@
         "moduleName": "CapitalOSKit"
       },
       {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
+        "kind": "TypeDecl",
+        "name": "CapitalOSError",
+        "printedName": "CapitalOSError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "network",
+            "printedName": "network",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CapitalOSKit.CapitalOSError.Type) -> (CapitalOSKit.NetworkError) -> CapitalOSKit.CapitalOSError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CapitalOSKit.NetworkError) -> CapitalOSKit.CapitalOSError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSError",
+                        "printedName": "CapitalOSKit.CapitalOSError",
+                        "usr": "s:12CapitalOSKit0A7OSErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CapitalOSKit.CapitalOSError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSError",
+                        "printedName": "CapitalOSKit.CapitalOSError",
+                        "usr": "s:12CapitalOSKit0A7OSErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CapitalOSKit0A7OSErrorO7networkyAcA12NetworkErrorOcACmF",
+            "mangledName": "$s12CapitalOSKit0A7OSErrorO7networkyAcA12NetworkErrorOcACmF",
+            "moduleName": "CapitalOSKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSError",
+                "printedName": "CapitalOSKit.CapitalOSError",
+                "usr": "s:12CapitalOSKit0A7OSErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSError",
+                "printedName": "CapitalOSKit.CapitalOSError",
+                "usr": "s:12CapitalOSKit0A7OSErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CapitalOSKit0A7OSErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12CapitalOSKit0A7OSErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "CapitalOSKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12CapitalOSKit0A7OSErrorO",
+        "mangledName": "$s12CapitalOSKit0A7OSErrorO",
         "moduleName": "CapitalOSKit",
         "declAttributes": [
-          "RawDocComment"
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkError",
+        "printedName": "NetworkError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tooManyRequests",
+            "printedName": "tooManyRequests",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CapitalOSKit.NetworkError.Type) -> (Swift.String) -> CapitalOSKit.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> CapitalOSKit.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errorMessage: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CapitalOSKit.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CapitalOSKit12NetworkErrorO15tooManyRequestsyACSS_tcACmF",
+            "mangledName": "$s12CapitalOSKit12NetworkErrorO15tooManyRequestsyACSS_tcACmF",
+            "moduleName": "CapitalOSKit"
+          },
+          {
+            "kind": "Var",
+            "name": "timeout",
+            "printedName": "timeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CapitalOSKit.NetworkError.Type) -> (Swift.String) -> CapitalOSKit.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> CapitalOSKit.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errorMessage: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CapitalOSKit.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CapitalOSKit12NetworkErrorO7timeoutyACSS_tcACmF",
+            "mangledName": "$s12CapitalOSKit12NetworkErrorO7timeoutyACSS_tcACmF",
+            "moduleName": "CapitalOSKit"
+          },
+          {
+            "kind": "Var",
+            "name": "connection",
+            "printedName": "connection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CapitalOSKit.NetworkError.Type) -> (Swift.Int) -> CapitalOSKit.NetworkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> CapitalOSKit.NetworkError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errorCode: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CapitalOSKit.NetworkError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkError",
+                        "printedName": "CapitalOSKit.NetworkError",
+                        "usr": "s:12CapitalOSKit12NetworkErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12CapitalOSKit12NetworkErrorO10connectionyACSi_tcACmF",
+            "mangledName": "$s12CapitalOSKit12NetworkErrorO10connectionyACSi_tcACmF",
+            "moduleName": "CapitalOSKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "CapitalOSKit.NetworkError",
+                "usr": "s:12CapitalOSKit12NetworkErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkError",
+                "printedName": "CapitalOSKit.NetworkError",
+                "usr": "s:12CapitalOSKit12NetworkErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12CapitalOSKit12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12CapitalOSKit12NetworkErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "CapitalOSKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12CapitalOSKit12NetworkErrorO",
+        "mangledName": "$s12CapitalOSKit12NetworkErrorO",
+        "moduleName": "CapitalOSKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
         "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CapitalOSCardDetails",
+        "printedName": "CapitalOSCardDetails",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "TypeDecl",
+                "name": "DisplayMode",
+                "printedName": "DisplayMode",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "full",
+                    "printedName": "full",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type) -> CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DisplayMode",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DisplayMode",
+                                "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO4fullyA2GmF",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO4fullyA2GmF",
+                    "moduleName": "CapitalOSKit"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "cardOnly",
+                    "printedName": "cardOnly",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type) -> CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DisplayMode",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DisplayMode",
+                                "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO8cardOnlyyA2GmF",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO8cardOnlyyA2GmF",
+                    "moduleName": "CapitalOSKit"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "cardBackOnly",
+                    "printedName": "cardBackOnly",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type) -> CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DisplayMode",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DisplayMode",
+                                "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO12cardBackOnlyyA2GmF",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO12cardBackOnlyyA2GmF",
+                    "moduleName": "CapitalOSKit"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisplayMode",
+                        "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                        "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DisplayMode",
+                        "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                        "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO2eeoiySbAG_AGtFZ",
+                    "moduleName": "CapitalOSKit",
+                    "static": true,
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "hashValue",
+                    "printedName": "hashValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO9hashValueSivp",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO9hashValueSivp",
+                    "moduleName": "CapitalOSKit",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO9hashValueSivg",
+                        "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO9hashValueSivg",
+                        "moduleName": "CapitalOSKit",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "hash",
+                    "printedName": "hash(into:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hasher",
+                        "printedName": "Swift.Hasher",
+                        "paramValueOwnership": "InOut",
+                        "usr": "s:s6HasherV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO4hash4intoys6HasherVz_tF",
+                    "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO4hash4intoys6HasherVz_tF",
+                    "moduleName": "CapitalOSKit",
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO",
+                "moduleName": "CapitalOSKit",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(cardId:displayMode:hideAddress:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DisplayMode",
+                    "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode",
+                    "hasDefaultArg": true,
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV11DisplayModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "hasDefaultArg": true,
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV6cardId11displayMode11hideAddressAESS_AE07DisplayI0OSbtcfc",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV6cardId11displayMode11hideAddressAESS_AE07DisplayI0OSbtcfc",
+                "moduleName": "CapitalOSKit",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV",
+            "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13ConfigurationV",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13configurationAC13ConfigurationVvp",
+            "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13configurationAC13ConfigurationVvp",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Configuration",
+                    "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration",
+                    "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13configurationAC13ConfigurationVvg",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13configurationAC13ConfigurationVvg",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any CapitalOSKit.CapitalOSDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvp",
+            "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvp",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CapitalOSKit.CapitalOSDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSDelegate",
+                        "printedName": "any CapitalOSKit.CapitalOSDelegate",
+                        "usr": "s:12CapitalOSKit0A10OSDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvg",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvg",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CapitalOSKit.CapitalOSDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSDelegate",
+                        "printedName": "any CapitalOSKit.CapitalOSDelegate",
+                        "usr": "s:12CapitalOSKit0A10OSDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvs",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvs",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvM",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV8delegateAA0A10OSDelegate_pSgvM",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSCardDetails",
+                "printedName": "CapitalOSKit.CapitalOSCardDetails",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "CapitalOSKit.CapitalOSCardDetails.Configuration",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CapitalOSDelegate",
+                "printedName": "any CapitalOSKit.CapitalOSDelegate",
+                "usr": "s:12CapitalOSKit0A10OSDelegateP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12CapitalOSKit0A13OSCardDetailsV13configuration8delegateA2C13ConfigurationV_AA0A10OSDelegate_ptcfc",
+            "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV13configuration8delegateA2C13ConfigurationV_AA0A10OSDelegate_ptcfc",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CapitalOSKit0A13OSCardDetailsV4bodyQrvp",
+            "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV4bodyQrvp",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A13OSCardDetailsV4bodyQrvg",
+                "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV4bodyQrvg",
+                "moduleName": "CapitalOSKit",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12CapitalOSKit0A13OSCardDetailsV",
+        "mangledName": "$s12CapitalOSKit0A13OSCardDetailsV",
+        "moduleName": "CapitalOSKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "CapitalOSKit"
       },
@@ -416,10 +1634,14 @@
         "name": "LinkKit",
         "printedName": "LinkKit",
         "declKind": "Import",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
       },
       {
         "kind": "Import",
@@ -430,13 +1652,24 @@
       },
       {
         "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CapitalOSKit"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "CapitalOSKit"
       },
       {
         "kind": "Import",
@@ -450,6 +1683,111 @@
         "name": "CapitalOSView",
         "printedName": "CapitalOSView",
         "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any CapitalOSKit.CapitalOSDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvp",
+            "mangledName": "$s12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvp",
+            "moduleName": "CapitalOSKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CapitalOSKit.CapitalOSDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSDelegate",
+                        "printedName": "any CapitalOSKit.CapitalOSDelegate",
+                        "usr": "s:12CapitalOSKit0A10OSDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvg",
+                "mangledName": "$s12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvg",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any CapitalOSKit.CapitalOSDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CapitalOSDelegate",
+                        "printedName": "any CapitalOSKit.CapitalOSDelegate",
+                        "usr": "s:12CapitalOSKit0A10OSDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvs",
+                "mangledName": "$s12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvs",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvM",
+                "mangledName": "$s12CapitalOSKit0A6OSViewV8delegateAA0A10OSDelegate_pSgvM",
+                "moduleName": "CapitalOSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -543,7 +1881,8 @@
         "declAttributes": [
           "Preconcurrency",
           "Custom",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -600,233 +1939,8 @@
       },
       {
         "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "LinkKit",
-        "printedName": "LinkKit",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CapitalOSDelegate",
-        "printedName": "CapitalOSDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "requestLogin",
-            "printedName": "requestLogin(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Result<CapitalOSKit.LoginResponse, any Swift.Error>) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Result",
-                    "printedName": "Swift.Result<CapitalOSKit.LoginResponse, any Swift.Error>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LoginResponse",
-                        "printedName": "CapitalOSKit.LoginResponse",
-                        "usr": "s:12CapitalOSKit13LoginResponseV"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:s6ResultO"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12CapitalOSKit0A10OSDelegateP12requestLogin10completionyys6ResultOyAA0E8ResponseVs5Error_pGc_tF",
-            "mangledName": "$s12CapitalOSKit0A10OSDelegateP12requestLogin10completionyys6ResultOyAA0E8ResponseVs5Error_pGc_tF",
-            "moduleName": "CapitalOSKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : CapitalOSKit.CapitalOSDelegate>",
-            "sugared_genericSig": "<Self where Self : CapitalOSKit.CapitalOSDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onLoadingStatusChanged",
-            "printedName": "onLoadingStatusChanged(loadingStatus:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LoadingStatus",
-                "printedName": "CapitalOSKit.LoadingStatus",
-                "usr": "s:12CapitalOSKit13LoadingStatusO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:12CapitalOSKit0A10OSDelegateP22onLoadingStatusChanged07loadingF0yAA0eF0O_tF",
-            "mangledName": "$s12CapitalOSKit0A10OSDelegateP22onLoadingStatusChanged07loadingF0yAA0eF0O_tF",
-            "moduleName": "CapitalOSKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : CapitalOSKit.CapitalOSDelegate>",
-            "sugared_genericSig": "<Self where Self : CapitalOSKit.CapitalOSDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:12CapitalOSKit0A10OSDelegateP",
-        "mangledName": "$s12CapitalOSKit0A10OSDelegateP",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "LoginResponse",
-        "printedName": "LoginResponse",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LoginResponse",
-                "printedName": "CapitalOSKit.LoginResponse",
-                "usr": "s:12CapitalOSKit13LoginResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12CapitalOSKit13LoginResponseV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s12CapitalOSKit13LoginResponseV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "CapitalOSKit",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:12CapitalOSKit13LoginResponseV",
-        "mangledName": "$s12CapitalOSKit13LoginResponseV",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit"
-      },
-      {
-        "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit"
-      },
-      {
-        "kind": "Import",
-        "name": "LinkKit",
-        "printedName": "LinkKit",
         "declKind": "Import",
         "moduleName": "CapitalOSKit"
       }
@@ -835,172 +1949,193 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/COWebView.swift",
       "kind": "StringLiteral",
-      "offset": 235,
-      "length": 212,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 290,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 334,
-      "length": 13,
-      "value": "\"development\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 348,
-      "length": 1,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 403,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 436,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COVersioning.swift",
-      "kind": "StringLiteral",
-      "offset": 446,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/IncomingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 148,
-      "length": 9,
-      "value": "\"on-load\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/IncomingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 180,
-      "length": 12,
-      "value": "\"link-plaid\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/IncomingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 215,
-      "length": 12,
-      "value": "\"open-plaid\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/IncomingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 251,
-      "length": 13,
-      "value": "\"clean-plaid\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/IncomingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 286,
-      "length": 11,
-      "value": "\"open-link\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/BrowserState.swift",
-      "kind": "StringLiteral",
-      "offset": 138,
-      "length": 10,
-      "value": "\"internal\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/BrowserState.swift",
-      "kind": "StringLiteral",
-      "offset": 169,
-      "length": 10,
-      "value": "\"external\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 150,
-      "length": 12,
-      "value": "\"sdkVersion\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 7,
-      "value": "\"appId\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 444,
-      "length": 13,
-      "value": "\"COViewModel\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 669,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 752,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 797,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/OutgoingEvents.swift",
-      "kind": "StringLiteral",
-      "offset": 181,
-      "length": 41,
-      "value": "\"external-accounts-public-token-received\""
-    },
-    {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COWebView.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
+      "offset": 85,
       "length": 12,
       "value": "\"darkModeOn\""
     },
     {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COWebView.swift",
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/COWebView.swift",
       "kind": "StringLiteral",
-      "offset": 325,
+      "offset": 323,
       "length": 11,
       "value": "\"COWebView\""
     },
     {
-      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/COWebView.swift",
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
-      "length": 19,
-      "value": "\"ContentController\""
+      "offset": 142,
+      "length": 212,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 197,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 241,
+      "length": 13,
+      "value": "\"development\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 1,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 343,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Utilities\/COVersioning.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/OutgoingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 86,
+      "length": 41,
+      "value": "\"external-accounts-public-token-received\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Components\/EntryPoint.swift",
+      "kind": "StringLiteral",
+      "offset": 58,
+      "length": 13,
+      "value": "\"cardDetails\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Components\/CapitalOSCardDetails.swift",
+      "kind": "BooleanLiteral",
+      "offset": 777,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 69,
+      "length": 12,
+      "value": "\"sdkVersion\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 103,
+      "length": 7,
+      "value": "\"appId\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 131,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 171,
+      "length": 18,
+      "value": "\"renderingContext\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 412,
+      "length": 11,
+      "value": "\"ViewModel\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 776,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 821,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3948,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/IncomingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 57,
+      "length": 9,
+      "value": "\"on-load\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/IncomingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 88,
+      "length": 12,
+      "value": "\"link-plaid\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/IncomingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 122,
+      "length": 12,
+      "value": "\"open-plaid\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/IncomingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 13,
+      "value": "\"clean-plaid\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Events\/IncomingEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 11,
+      "value": "\"open-link\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Models\/BrowserState.swift",
+      "kind": "StringLiteral",
+      "offset": 64,
+      "length": 10,
+      "value": "\"internal\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Models\/BrowserState.swift",
+      "kind": "StringLiteral",
+      "offset": 102,
+      "length": 10,
+      "value": "\"external\""
     }
   ]
 }

@@ -1,10 +1,3 @@
-//
-//  CapitalOSKit.h
-//  CapitalOSKit
-//
-//  Created by Nativ Barak on 5/23/24.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for CapitalOSKit.
