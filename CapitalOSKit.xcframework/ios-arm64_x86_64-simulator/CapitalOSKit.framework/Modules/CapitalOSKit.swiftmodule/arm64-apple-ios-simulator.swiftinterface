@@ -1,47 +1,45 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name CapitalOSKit
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 @_exported import CapitalOSKit
+import Combine
 import Foundation
 import LinkKit
 import OSLog
+import Observation
 import SafariServices
+import Security
 import Swift
 import SwiftUI
 import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum CapitalOSViewState : Swift.String {
-  case idle
-  case loading
-  case error
-  case complete
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+import _WebKit_SwiftUI
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSAccountActions : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSAccountActionsV4bodyQrvp", 0) __
 }
-public struct CapitalOSLoginResponse : Swift.Decodable {
-  public init(token: Swift.String)
-  public init(from decoder: any Swift.Decoder) throws
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSAccountDetails : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSAccountDetailsV4bodyQrvp", 0) __
 }
-public protocol CapitalOSDelegate : AnyObject {
-  func onLoginNeeded(completion: @escaping (Swift.Result<CapitalOSKit.CapitalOSLoginResponse, any Swift.Error>) -> Swift.Void)
-  func onStateChanged(viewState: CapitalOSKit.CapitalOSViewState)
-  func onError(error: CapitalOSKit.CapitalOSError)
-}
-public enum CapitalOSError : Swift.Error, Swift.Equatable {
-  case network(CapitalOSKit.NetworkError)
-  public static func == (a: CapitalOSKit.CapitalOSError, b: CapitalOSKit.CapitalOSError) -> Swift.Bool
-}
-public enum NetworkError : Swift.Equatable {
-  case tooManyRequests(errorMessage: Swift.String)
-  case timeout(errorMessage: Swift.String)
-  case connection(errorCode: Swift.Int)
-  public static func == (a: CapitalOSKit.NetworkError, b: CapitalOSKit.NetworkError) -> Swift.Bool
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSBillPayApp : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A12OSBillPayAppV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct CapitalOSCardDetails : SwiftUICore.View {
   public struct Configuration {
@@ -55,7 +53,9 @@ public enum NetworkError : Swift.Equatable {
         get
       }
     }
-    public init(cardId: Swift.String, displayMode: CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode = .full, hideAddress: Swift.Bool = false)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cardId: Swift.String, displayMode: CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode = .full, hideAddress: Swift.Bool = false, onCardCanceled: (() -> Swift.Void)? = nil, onHideSensitiveDetails: (() -> Swift.Void)? = nil)
+    #endif
   }
   @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSCardDetails.Configuration
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
@@ -65,18 +65,350 @@ public enum NetworkError : Swift.Equatable {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A13OSCardDetailsV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct CapitalOSView : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSCardsApp : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
   @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A6OSViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A10OSCardsAppV4bodyQrvp", 0) __
 }
-extension CapitalOSKit.CapitalOSViewState : Swift.Equatable {}
-extension CapitalOSKit.CapitalOSViewState : Swift.Hashable {}
-extension CapitalOSKit.CapitalOSViewState : Swift.RawRepresentable {}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSConfigureAutoPay : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSConfigureAutoPay.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSConfigureAutoPay.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A18OSConfigureAutoPayV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSConnectToVendors : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cardId: Swift.String? = nil, onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSConnectToVendors.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSConnectToVendors.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A18OSConnectToVendorsV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSContactSupport : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onDone: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSContactSupport.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSContactSupport.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSContactSupportV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSDisputeTransaction : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(transactionId: Swift.String, onDone: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSDisputeTransaction.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSDisputeTransaction.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A20OSDisputeTransactionV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSInsightsDashboard : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A19OSInsightsDashboardV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSInsightsWidget : SwiftUICore.View {
+  public struct Configuration {
+    public enum Widget : Swift.String {
+      case overTimeSpendByCardPerMonth
+      case overTimeSpendByCategoryPerMonth
+      case topCardsBySpendThisMonth
+      case topCategoriesBySpendThisMonth
+      case topTransactionsByAmountThisMonth
+      case comparisonSpendThisMonthVsLastMonth
+      #if compiler(>=5.3) && $NonescapableTypes
+      public init?(rawValue: Swift.String)
+      #endif
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(widget: CapitalOSKit.CapitalOSInsightsWidget.Configuration.Widget, hideTitle: Swift.Bool = false, height: Swift.Int? = nil, width: Swift.Int? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSInsightsWidget.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSInsightsWidget.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSInsightsWidgetV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSIssueCard : SwiftUICore.View {
+  public struct Configuration {
+    public struct Cardholder : Swift.Codable {
+      public init(userId: Swift.String)
+      public init(firstName: Swift.String, lastName: Swift.String, phone: Swift.String)
+      public func encode(to encoder: any Swift.Encoder) throws
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cardholder: CapitalOSKit.CapitalOSIssueCard.Configuration.Cardholder? = nil, onDone: (() -> Swift.Void)? = nil, onCancel: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSIssueCard.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSIssueCard.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A11OSIssueCardV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSLegalDocuments : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onDone: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSLegalDocuments.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSLegalDocuments.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSLegalDocumentsV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSMakePayment : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onDone: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSMakePayment.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSMakePayment.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A13OSMakePaymentV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSManageBankConnections : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSManageBankConnections.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSManageBankConnections.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A23OSManageBankConnectionsV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSOnboarding : SwiftUICore.View {
+  public struct Configuration {
+    public enum OnboardingEntryPoint : Swift.String {
+      case welcome
+      case application
+      #if compiler(>=5.3) && $NonescapableTypes
+      public init?(rawValue: Swift.String)
+      #endif
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum OnboardingExitPoint : Swift.String {
+      case application
+      case activation
+      #if compiler(>=5.3) && $NonescapableTypes
+      public init?(rawValue: Swift.String)
+      #endif
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(entryPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint? = nil, exitPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint? = nil, onDone: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSOnboarding.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSOnboarding.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A12OSOnboardingV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSPolicySettings : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSPolicySettings.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSPolicySettings.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A16OSPolicySettingsV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSReplaceCard : SwiftUICore.View {
+  public struct Configuration {
+    public struct ReplaceCardResult {
+      public let oldCardId: Swift.String
+      public let newCardId: Swift.String
+      public init(oldCardId: Swift.String, newCardId: Swift.String)
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cardId: Swift.String, onDone: ((CapitalOSKit.CapitalOSReplaceCard.Configuration.ReplaceCardResult) -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSReplaceCard.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSReplaceCard.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A13OSReplaceCardV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSStatements : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(onDone: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSStatements.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSStatements.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A12OSStatementsV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSTerminateCard : SwiftUICore.View {
+  public struct Configuration {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(cardId: Swift.String, onDone: (() -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
+    #endif
+  }
+  @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSTerminateCard.Configuration
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(configuration: CapitalOSKit.CapitalOSTerminateCard.Configuration, delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A15OSTerminateCardV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct CapitalOSTransactions : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
+  @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s12CapitalOSKit0A14OSTransactionsV4bodyQrvp", 0) __
+}
+public enum CapitalOSError : Swift.Error, Swift.Equatable {
+  case network(CapitalOSKit.NetworkError)
+  case authentication(CapitalOSKit.AuthenticationError)
+  case plaidError
+  public static func == (a: CapitalOSKit.CapitalOSError, b: CapitalOSKit.CapitalOSError) -> Swift.Bool
+}
+public enum NetworkError : Swift.Equatable {
+  case tooManyRequests(errorMessage: Swift.String)
+  case timeout(errorMessage: Swift.String)
+  case connection(errorCode: Swift.Int)
+  public static func == (a: CapitalOSKit.NetworkError, b: CapitalOSKit.NetworkError) -> Swift.Bool
+}
+public enum AuthenticationError : Swift.Equatable {
+  case loginFailed(errorMessage: Swift.String)
+  case sdkNotConfigured
+  public static func == (a: CapitalOSKit.AuthenticationError, b: CapitalOSKit.AuthenticationError) -> Swift.Bool
+}
+public struct CapitalOSLoginResponse : Swift.Decodable {
+  public init(token: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CapitalOSViewState : Swift.String {
+  case idle
+  case loading
+  case error
+  case complete
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol CapitalOSDelegate : AnyObject {
+  func onStateChanged(viewState: CapitalOSKit.CapitalOSViewState)
+  func onError(error: CapitalOSKit.CapitalOSError)
+}
+public typealias LoginAction = (@escaping (Swift.Result<CapitalOSKit.CapitalOSLoginResponse, any Swift.Error>) -> Swift.Void) -> Swift.Void
+@_hasMissingDesignatedInitializers public class CapitalOSSDK {
+  public static func configure(onLoginRequired: @escaping CapitalOSKit.LoginAction)
+  public static func reset()
+  @objc deinit
+}
+extension CapitalOSKit.CapitalOSAccountActions : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSAccountDetails : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSBillPayApp : Swift.Sendable {}
 extension CapitalOSKit.CapitalOSCardDetails : Swift.Sendable {}
 extension CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode : Swift.Equatable {}
 extension CapitalOSKit.CapitalOSCardDetails.Configuration.DisplayMode : Swift.Hashable {}
-extension CapitalOSKit.CapitalOSView : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSCardsApp : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSConfigureAutoPay : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSConnectToVendors : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSContactSupport : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSDisputeTransaction : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSInsightsDashboard : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSInsightsWidget : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSInsightsWidget.Configuration.Widget : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSInsightsWidget.Configuration.Widget : Swift.Hashable {}
+extension CapitalOSKit.CapitalOSInsightsWidget.Configuration.Widget : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSIssueCard : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSLegalDocuments : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSMakePayment : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSManageBankConnections : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSOnboarding : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint : Swift.Hashable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint : Swift.Hashable {}
+extension CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint : Swift.RawRepresentable {}
+extension CapitalOSKit.CapitalOSPolicySettings : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSReplaceCard : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSStatements : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSTerminateCard : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSTransactions : Swift.Sendable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.Equatable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.Hashable {}
+extension CapitalOSKit.CapitalOSViewState : Swift.RawRepresentable {}
