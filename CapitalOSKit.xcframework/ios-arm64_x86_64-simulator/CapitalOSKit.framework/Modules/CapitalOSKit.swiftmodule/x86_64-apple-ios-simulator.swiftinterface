@@ -17,6 +17,40 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import _WebKit_SwiftUI
+@_hasMissingDesignatedInitializers final public class CapitalOSAction<Output> : Combine.ObservableObject where Output : Swift.Equatable {
+  @Combine.Published @_projectedValueProperty($state) final public var state: CapitalOSKit.CapitalOSActionState<Output> {
+    get
+  }
+  final public var $state: Combine.Published<CapitalOSKit.CapitalOSActionState<Output>>.Publisher {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func execute(completion: ((Swift.Result<Output, CapitalOSKit.CapitalOSError>) -> Swift.Void)? = nil)
+  #endif
+  final public func cancel()
+  final public var statePublisher: Combine.AnyPublisher<CapitalOSKit.CapitalOSActionState<Output>, Swift.Never> {
+    get
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum CapitalOSActions {
+  public static func freezeCard(cardId: Swift.String) -> CapitalOSKit.CapitalOSAction<CapitalOSKit.FreezeCardResult>
+}
+public struct FreezeCardResult : Swift.Decodable, Swift.Equatable {
+  public let status: Swift.String
+  public init(status: Swift.String)
+  public static func == (a: CapitalOSKit.FreezeCardResult, b: CapitalOSKit.FreezeCardResult) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CapitalOSActionState<Value> : Swift.Equatable where Value : Swift.Equatable {
+  case idle
+  case loading
+  case success(Value)
+  case failure(CapitalOSKit.CapitalOSError)
+  case canceled
+  public static func == (a: CapitalOSKit.CapitalOSActionState<Value>, b: CapitalOSKit.CapitalOSActionState<Value>) -> Swift.Bool
+}
 @_Concurrency.MainActor @preconcurrency public struct CapitalOSAccountActions : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CapitalOSKit.CapitalOSDelegate)?
   @_Concurrency.MainActor @preconcurrency public init(delegate: any CapitalOSKit.CapitalOSDelegate)
@@ -230,6 +264,10 @@ import _WebKit_SwiftUI
 }
 @_Concurrency.MainActor @preconcurrency public struct CapitalOSOnboarding : SwiftUICore.View {
   public struct Configuration {
+    public struct Account : Swift.Decodable {
+      public let status: Swift.String
+      public init(from decoder: any Swift.Decoder) throws
+    }
     public enum OnboardingEntryPoint : Swift.String {
       case welcome
       case application
@@ -253,7 +291,7 @@ import _WebKit_SwiftUI
       }
     }
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(entryPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint? = nil, exitPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint? = nil, onDone: (() -> Swift.Void)? = nil)
+    public init(entryPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingEntryPoint? = nil, exitPoint: CapitalOSKit.CapitalOSOnboarding.Configuration.OnboardingExitPoint? = nil, onDone: ((CapitalOSKit.CapitalOSOnboarding.Configuration.Account) -> Swift.Void)? = nil)
     #endif
   }
   @_Concurrency.MainActor @preconcurrency public let configuration: CapitalOSKit.CapitalOSOnboarding.Configuration
@@ -280,10 +318,10 @@ import _WebKit_SwiftUI
 }
 @_Concurrency.MainActor @preconcurrency public struct CapitalOSReplaceCard : SwiftUICore.View {
   public struct Configuration {
-    public struct ReplaceCardResult {
+    public struct ReplaceCardResult : Swift.Decodable {
       public let oldCardId: Swift.String
       public let newCardId: Swift.String
-      public init(oldCardId: Swift.String, newCardId: Swift.String)
+      public init(from decoder: any Swift.Decoder) throws
     }
     #if compiler(>=5.3) && $NonescapableTypes
     public init(cardId: Swift.String, onDone: ((CapitalOSKit.CapitalOSReplaceCard.Configuration.ReplaceCardResult) -> Swift.Void)? = nil, onClose: (() -> Swift.Void)? = nil)
@@ -337,17 +375,22 @@ public enum CapitalOSError : Swift.Error, Swift.Equatable {
   case network(CapitalOSKit.NetworkError)
   case authentication(CapitalOSKit.AuthenticationError)
   case plaidError
+  case entityNotFound
+  case invalidRequest
+  case internalError(errorCode: Swift.Int)
   public static func == (a: CapitalOSKit.CapitalOSError, b: CapitalOSKit.CapitalOSError) -> Swift.Bool
 }
 public enum NetworkError : Swift.Equatable {
   case tooManyRequests(errorMessage: Swift.String)
   case timeout(errorMessage: Swift.String)
   case connection(errorCode: Swift.Int)
+  case unknown(description: Swift.String)
   public static func == (a: CapitalOSKit.NetworkError, b: CapitalOSKit.NetworkError) -> Swift.Bool
 }
 public enum AuthenticationError : Swift.Equatable {
   case loginFailed(errorMessage: Swift.String)
   case sdkNotConfigured
+  case rateLimited(errorMessage: Swift.String)
   public static func == (a: CapitalOSKit.AuthenticationError, b: CapitalOSKit.AuthenticationError) -> Swift.Bool
 }
 public struct CapitalOSLoginResponse : Swift.Decodable {
