@@ -12036,7 +12036,7 @@
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Components\/CapitalOSCardDetails.swift",
       "kind": "BooleanLiteral",
-      "offset": 1438,
+      "offset": 1469,
       "length": 5,
       "value": "false"
     },
@@ -13019,6 +13019,20 @@
       "offset": 406,
       "length": 11,
       "value": "\"COWebView\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 493,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1734,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/CapitalOSSDK.swift",

@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vOvqyATUGRNudJtm6cN2xolzkNo=
+		Bom6abBWULU8x6ZP5fzH9DV5EME=
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		2e25glAbxDA2b4T5yP+W/b2XoNE=
+		awxIZjhj7RTDkv/ooePIrOsMH0Q=
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hWsxjcRNTfMxrJwFzbOugO06RLM=
+		tDxV9JeMoCU9H8zwGmHc2geOVig=
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		2e25glAbxDA2b4T5yP+W/b2XoNE=
+		awxIZjhj7RTDkv/ooePIrOsMH0Q=
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CapitalOSKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z7J8gOiZK35x25dXYaGCZJ06FAE=
+		QZefL7ZcYUBfbbci4uFKYY8xw3g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xlhNCSL3cVVY+Y/kWLysVw/SzyEGl+uT186ZgqE7qz0=
+			qTCybYcj2TIuAS444SdmwWhTHob9bwf7R0guIH90aI4=
 			</data>
 		</dict>
 		<key>Modules/CapitalOSKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4sukOxEU3LTFx/GxTSsbMSn9WTnvQQOza2HFhtc1xM=
+			l+YiaY6SnWeGUloz1sjJAX4eK7IvzhUxwjYTYYX4g3I=
 			</data>
 		</dict>
 		<key>Modules/CapitalOSKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xlhNCSL3cVVY+Y/kWLysVw/SzyEGl+uT186ZgqE7qz0=
+			qTCybYcj2TIuAS444SdmwWhTHob9bwf7R0guIH90aI4=
 			</data>
 		</dict>
 		<key>Modules/CapitalOSKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6xKFVa6uFPptgdwwzi86AqdrMlqAxLHAZpisCRpOMI=
+			aneYT+F3TXSkfU4AQCSPG0+x3SKTzk1ToRUjvCuuVt4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
