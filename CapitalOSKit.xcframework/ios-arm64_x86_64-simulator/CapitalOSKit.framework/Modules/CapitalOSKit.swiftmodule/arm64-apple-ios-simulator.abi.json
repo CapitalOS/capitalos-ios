@@ -13023,14 +13023,21 @@
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
       "kind": "BooleanLiteral",
-      "offset": 493,
+      "offset": 572,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
+      "kind": "StringLiteral",
+      "offset": 1829,
+      "length": 23,
+      "value": "\"InternalCapitalOSView\""
+    },
+    {
+      "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1734,
+      "offset": 2458,
       "length": 1,
       "value": "1"
     },
