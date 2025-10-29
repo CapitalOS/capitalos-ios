@@ -11658,13 +11658,6 @@
       },
       {
         "kind": "Import",
-        "name": "Observation",
-        "printedName": "Observation",
-        "declKind": "Import",
-        "moduleName": "CapitalOSKit"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -12967,35 +12960,35 @@
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 97,
+      "offset": 78,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 118,
       "length": 18,
       "value": "\"renderingContext\""
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 319,
+      "offset": 300,
       "length": 11,
       "value": "\"ViewModel\""
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1124,
+      "offset": 1063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/ViewModels\/ViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1166,
+      "offset": 1105,
       "length": 5,
       "value": "false"
     },
@@ -13030,14 +13023,14 @@
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 1882,
       "length": 23,
       "value": "\"InternalCapitalOSView\""
     },
     {
       "filePath": "\/Users\/gilbert\/dev\/capitalos\/iOS\/CapitalOSKit\/Views\/InternalCapitalOSView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2458,
+      "offset": 2511,
       "length": 1,
       "value": "1"
     },

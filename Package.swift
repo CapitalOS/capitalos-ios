@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "CapitalOSKit",
     platforms: [
-        .iOS(.v17)
+        .iOS(.v16)
     ],
     products: [
         .library(
@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         // Using the plaid-link-ios-spm repository, which provides the LinkKit product.
-        .package(url: "https://github.com/plaid/plaid-link-ios-spm.git", from: "6.4.1")
+        .package(url: "https://github.com/plaid/plaid-link-ios-spm.git", from: "6.4.2")
     ],
     targets: [
         .binaryTarget(
